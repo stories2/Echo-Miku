@@ -24,7 +24,7 @@ app.get("/keyboard", function (request, response) {
 
 app.post("/message", function (request, response) {
 
-    console.log("/message-> user_key: " + request.body["user_key"])
+    console.log("/message-> user_key: " + request.body["user_key"] + " type: " + request.body["type"] + " content: " + request.body["content"])
     responseMessage = {
         "message": {
             "text": request.body["content"],
