@@ -24,4 +24,9 @@ exports.v1 = functions.https.onRequest(app);
 
 appV2.use(cors)
 appV2.post('/hello', appV2Route.hellowWorld)
+appV2.post('/picture', appV2Route.picture)
+appV2.post('/basicCard', appV2Route.basicCard)
+appV2.post('/commerceCard', appV2Route.commerceCard)
+appV2.post('/listCard', appV2Route.listCard)
+appV2.post('/carousel', appV2Route.carousel)
 exports.v2 = functions.https.onRequest(appV2)
