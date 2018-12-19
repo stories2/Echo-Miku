@@ -9,7 +9,7 @@ exports.hellowWorld = function (request, response) {
             "outputs": [
                 {
                     "simpleText": {
-                        "text": request.userRequest.utterance
+                        "text": request.body.userRequest.utterance
                     }
                 }
             ]
