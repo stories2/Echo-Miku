@@ -12,6 +12,38 @@ exports.hellowWorld = function (request, response) {
                         "text": request.body.userRequest.utterance
                     }
                 }
+            ],
+            "quickReplies": [
+                {
+                    "label": "Text",
+                    "action": "message",
+                    "messageText": "안녕"
+                },
+                {
+                    "label": "사진",
+                    "action": "message",
+                    "messageText": "사진"
+                },
+                {
+                    "label": "기본 카드",
+                    "action": "message",
+                    "messageText": "기본 카드"
+                },
+                {
+                    "label": "커머스 카드",
+                    "action": "message",
+                    "messageText": "커머스 카드"
+                },
+                {
+                    "label": "리스트 카드",
+                    "action": "message",
+                    "messageText": "리스트 카드"
+                },
+                {
+                    "label": "케로셀",
+                    "action": "message",
+                    "messageText": "케로셀"
+                }
             ]
         }
     }
